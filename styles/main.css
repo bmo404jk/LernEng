@@ -1,6 +1,9 @@
-@import url(laptop768px.css)(min-device-width:431px) and (max-device-width:769px);
-@import url(mobile430px.css)(min-device-width:0px) and (max-device-width:431px);
-@import url(1024px.css)(min-device-width:769px) and (max-device-width:1025px);
+@import url(laptop768px.css)(min-width:431px) and (max-width:769px);
+@import url(mobile430px.css)(min-width:0px) and (max-width:431px);
+@import url(1024px.css)(min-width:769px) and (max-width:1025px);
+@import url(1366px.css)(min-width:1025px) and (max-width:1367px);
+@import url(1920px.css)(min-width:1367px) and (max-width:1920px);
+@import url(1920px.css)(min-width:1920px) and (max-width:8000px);
 
 * {
     margin: 0;
@@ -72,11 +75,24 @@ img {
 	--max-width_main:430px;
 	
 	--img_size: 20px;
-	
 }
-main{
-	font-family: 'Space Grotesk', sans-serif;
-	display:flex;
-	flex-direction: column;
+nav ul li:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+nav ul li:last-child:hover{
+    cursor: pointer;
+    background: linear-gradient(45deg, #1E0E62, #25DAC5);
+    opacity: 70%;
+}
+.buttom_container button:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg, #1E0E62, #25DAC5);
+    opacity: 70%;
+}
+.bottom_content button:hover {
+    cursor: pointer;
+    opacity: 70%;
+    background: linear-gradient(45deg, #1E0E62, #E93A7D);
 }
 
