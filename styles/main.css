@@ -95,4 +95,7 @@ nav ul li:last-child:hover{
     opacity: 70%;
     background: linear-gradient(45deg, #1E0E62, #E93A7D);
 }
+.burger_menu_content li:hover{
+    cursor: pointer;
+}
 

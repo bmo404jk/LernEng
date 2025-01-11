@@ -113,7 +113,28 @@ body{
 		border-radius: 10px;
 		background-color: black;
 	}
-	
+	.burger_menu_content{
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		min-width: 431px;
+		max-width: 431px;
+		min-height: 100vh;
+		background-color: white;
+		
+	}
+	.burger_menu_content ul{
+		margin-top: 50px;
+		padding-top: 20px;
+		display: flex;
+		flex-direction: column;
+		max-height: 160px;
+		align-items: center;
+	}
+	.burger_menu_content li{
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
 	/*header bottom content*/
 	.bottom_content {
 		min-width: 250px;
