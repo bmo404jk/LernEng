@@ -11,6 +11,6 @@ burger_menu.addEventListener('click',function() {
         document.html
     } else {
         burger_menu_content.style.display = "none";
-        document.documentElement.style.overflow = 'auto';
     }
 });
+

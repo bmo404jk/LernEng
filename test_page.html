@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LernEng</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/main.css">
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<header>
+				<div class="obj_container">
+					<img class="obj" src="img/object.svg">
+					<img class="obj2" src="img/obj2.svg">
+					<img class="obj3" src="img/obj3.svg">
+				</div>
+				<nav>
+					<div class="logo">
+						<img src="img/Group.svg">
+						<p>LernEng</p>
+					</div>
+					<section class="burger_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</section>
+					<ul>
+						<li>Польза изучения английского</li>
+						<li>Ресурсы для изучения</li>
+						<li>CEFR</li>
+						<li>Наши тесты</li>
+                            <button class="back_to_main">
+                               В начало
+                           </button> 
+					</ul>
+				</nav>
+				<section class="bottom_content">
+					<div class="burger_menu_content" style="display: none;">
+						<ul>
+							<li>Польза изучения английского</li>
+							<li>Ресурсы для изучения</li>
+							<li>CEFR</li>
+							<li>Наши тесты</li>
+                                <button class="back_to_main">
+                                   В начало
+                               </button> 
+						</ul>
+					</div>
+				</section>
+			</header>
+            <p class="test_text">Експресс тест на определение уровня владения языком &#129299;</p>
+			<section class="test_block_container">
+                <div class="test_block">
+                    <p class="question_text">Вопрос № <span class="number_of_question">1</span></p>
+                    <p class="question_text1">Did you ______ anything interesting last weekend?</p>
+
+                    <div class="answer_container">
+                        <p class="answer1">Doing</p>
+                        <p class="answer2">Was</p>
+                        <p class="answer3">Do</p>
+                    </div>
+                </div>
+                <button class="button_next">Следующий вопрос</button>
+            </section>
+		</main>
+		<script src="js/burger_menu.js"></script>
+        <script src="js/base.js"></script>
+	</body>
+</html>
