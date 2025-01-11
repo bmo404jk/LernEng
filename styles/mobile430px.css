@@ -134,16 +134,35 @@ body{
 		max-height: 160px;
 		align-items: center;
 	}
-	.burger_menu_content li{
+	.burger_menu_content ul li a{
+		display: block;
+		padding: 1em;
+		border-radius: 5em;
 		margin-bottom: 30px;
-		font-size: 20px;
+		font-size: 14px;
+		width: 18em;
+		height: 4em;
+		text-align: center;
+		background-color: #25DAC5;
+		color: white;
+	}
+	.burger_menu_content ul li:last-child a{
+		display: block;
+		padding: 1em;
+		border-radius: 5em;
+		margin-bottom: 30px;
+		font-size: 14px;
+		width: 18em;
+		height: 4em;
+		text-align: center;
+		background-color: #E93A7D;
+		color: white;
 	}
 	/*header bottom content*/
 	.bottom_content {
 		min-width: 250px;
         max-width: 270px;
-        display: flex
-;
+        display: flex;
         flex-direction: column;
         align-items: center;
 	}
@@ -250,6 +269,14 @@ body{
 
 
 
+
+
+
+
+
+
+
+
 /*test pages styles*/
 .test_block_container {
 	align-items: center;
@@ -261,7 +288,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	margin-top: 90px;
-	width: 18em;
+	width: 18.5em;
 	height: 100%;
 	border-radius: 10px;
 	background-color: #25DAC5;
@@ -269,7 +296,7 @@ body{
 	margin-bottom: 30px;
 }
 .test_text {
-	margin-top: 90px;
+	margin-top: 45px;
 	text-align: center;
 	margin-bottom: -75px;
 }
