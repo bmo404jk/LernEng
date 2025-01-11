@@ -8,9 +8,9 @@ burger_menu.addEventListener('click',function() {
          burger_menu_content.style.display = "flex";
          burger_menu_content.style.position = "fixed";
          burger_menu_content.style.zIndex = '100';
-        document.html
     } else {
         burger_menu_content.style.display = "none";
+        document.documentElement.style.overflow = 'auto';
     }
 });
 

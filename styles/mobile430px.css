@@ -252,6 +252,8 @@ body{
 
 /*test pages styles*/
 .test_block_container {
+	margin-left: 30px;
+	margin-right: 30px;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -326,5 +328,4 @@ body{
 	border: 0px;
 	color: white;
 	margin-bottom: 30px;
-	
 }
