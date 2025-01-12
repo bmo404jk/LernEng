@@ -138,8 +138,7 @@ let array_correct_response = [
 ];
 
 let count_of_number_test = 1;
-let click_count = 0;
-let correct_answer_count = 0;
+window.correct_answer_count = 0;
 let isClicked = false;
 let x = 1;
 let i = 1;
@@ -153,7 +152,7 @@ answer1.addEventListener("click",function(){
         answer1.style.opacity = "70%";
         answer1.style.color = "white";
         block_answers();
-        correct_answer_count+=1;
+        window.correct_answer_count+=1;
     }else {
         answer1.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
         answer1.style.opacity = "70%";
@@ -170,7 +169,7 @@ answer2.addEventListener("click",function(){
         answer2.style.opacity = "70%";
         answer2.style.color = "white";
         block_answers();
-        correct_answer_count+=1;
+        window.correct_answer_count+=1;
     }else {
         answer2.style.background ="linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
         answer2.style.opacity = "70%";
@@ -186,7 +185,7 @@ answer3.addEventListener("click",function(){
         answer3.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
         answer3.style.opacity = "70%";
         answer3.style.color = "white";
-        correct_answer_count+=1;
+        window.correct_answer_count+=1;
         block_answers();
     }else {
         answer3.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
@@ -203,7 +202,7 @@ answer4.addEventListener("click",function(){
         answer4.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
         answer4.style.opacity = "70%";
         answer4.style.color = "white";
-        correct_answer_count+=1;
+        window.correct_answer_count+=1;
         block_answers();
     }else {
         answer4.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
@@ -233,6 +232,7 @@ function unblock_answers() {
 
 
 btn_next.addEventListener('click',function(){
+    console.log("correct answer:" + window.correct_answer_count);
     if(isClicked == false) {
         alert("Выберите вариант ответа!");
        
@@ -267,7 +267,13 @@ btn_next.addEventListener('click',function(){
         x++;    
         y++;
         console.log(y);
-    
+        if(count_of_number_test > 29) {
+            btn_next.innerHTML = "Завершить тестирование"
+            btn_next.addEventListener("click", function() {
+                localStorage.setItem('count_current_answer', window.correct_answer_count);
+                window.location.href = "result.html";
+            });
+        }
     
         answer1.style.background = "white";
         answer1.style.opacity = "100%";

@@ -15,5 +15,6 @@ burger_menu.addEventListener('click',function() {
 });
 
 document.querySelector(".quick_test_btn").addEventListener('click', function() {
+    localStorage.setItem('count_current_answer', window.correct_answer_count);
     window.location.href = "test_page.html";
 });

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LernEng</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/main.css">
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<header>
+				<div class="obj_container">
+					<img class="obj" src="img/object.svg">
+					<img class="obj2" src="img/obj2.svg">
+					<img class="obj3" src="img/obj3.svg">
+				</div>
+				<nav>
+					<div class="logo">
+						<img src="img/Group.svg">
+						<p>LernEng</p>
+					</div>
+					<section class="burger_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</section>
+					<ul>
+						<li><a href="">Польза изучения английского</a></li>
+						<li><a href="">Ресурсы для изучения</a></li>
+						<li><a href="">CEFR</a></li>
+						<li><a href="">Наши тесты</a></li>
+						<li><a href="index.html">В начало</a></li>
+					</ul>
+				</nav>
+				<section class="bottom_content">
+					<div class="burger_menu_content"  style="display: none;">
+						<ul>
+							<li><a href="">Польза изучения английского</a></li>
+							<li><a href="">Ресурсы для изучения</a></li>
+							<li><a href="">CEFR</a></li>
+							<li><a href="">Наши тесты</a></li>
+							<li><a href="index.html">В начало</a></li>
+						</ul>
+					</div>
+				</section>
+			</header>
+            <div class="result_block">
+				<button class="btn_results">Узнать результаты</button>
+				<p class="true_p" style="font-size: 0px;">Правильных ответов: <span class="correct_result"></span></p>
+				<p class="true_p2" style="font-size: 0px;">Это соответствует уровню владения языком: <span class="engleesh_level"></span></p>
+			</div>
+		</main>
+		<script src="js/burger_menu.js"></script>
+		<script src="js/tests.js"></script>
+		<script src="js/result.js"></script>
+	</body>
+</html>
