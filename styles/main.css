@@ -101,32 +101,23 @@ nav ul li:last-child:hover{
 
 .answer1:hover{
 	cursor: pointer;
-    opacity: 70%;
-    color: white;
-    background: linear-gradient(45deg, #1E0E62,#25DAC5);
+
 }
 .answer2:hover{
 	cursor: pointer;
-    opacity: 70%;
-    color: white;
-    background: linear-gradient(45deg, #1E0E62,#25DAC5);
+ 
 }
 .answer3:hover{
 	cursor: pointer;
-    opacity: 70%;
-    color: white;
-    background: linear-gradient(45deg, #1E0E62,#25DAC5);
+
 }
 .answer4:hover{
 	cursor: pointer;
-    opacity: 70%;
-    color: white;
-    background: linear-gradient(45deg, #1E0E62,#25DAC5);
+
+
 }
 .button_next:hover{
 	cursor: pointer;
-    opacity: 70%;
-    background: linear-gradient(45deg, #1E0E62, #E93A7D);
 	
 }
 

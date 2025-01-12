@@ -43,9 +43,9 @@ let array_questions = ["Did you ______ anything interesting last weekend?",
 
 let array_answer1 = ["Do","Doing","Was","Did"];
 let array_answer2 = ["Is","Works","Does","Work"];
-let array_answer3 = ["He’s a(n)","His job is","His job is as","He work as a(n)"];
+let array_answer3 = ["He is a/an","His job is","His job is as","He work as a(n)"];
 let array_answer4 = ["Long","Far","Away","Many"];
-let array_answer5 = ["Will be able","Can","Won’t be able","Wouldn’t"];
+let array_answer5 = ["Will be able","Can","Will not be able","Wouldn’t"];
 let array_answer6 = ["Have you been","Have you","Are you","Be you"];
 let array_answer7 = ["Has had","Has","Had had","Had"];
 let array_answer8 = ["Already","Never","Ever","Still"];
@@ -66,9 +66,9 @@ let array_answer21 = ["Left I my glasses","I left my glasses","Did I leave my gl
 let array_answer22 = ["Four times","Twice a","Every others","Every couple"];
 let array_answer23 = ["Plugged it in","Plug in it","Plug it in","Will plug it in"];
 let array_answer24 = ["A very lot","Lots","A lot of","Very much"];
-let array_answer25 = ["Has he got","Hasn’t he","Has he","Haven’t he"];
+let array_answer25 = ["Has he got","Has not he","Has he","Haven’t he"];
 let array_answer26 = ["Feel","Feel like","Like","Would like"];
-let array_answer27 = ["Won’t","Haven’t","Aren’t","Don’t"];
+let array_answer27 = ["Won’t","Haven’t","Aren’t","Do not"];
 let array_answer28 = ["Which","What","Whose","Who"];
 let array_answer29 = ["No","Any","None","Some"];
 let array_answer30 = ["To talk","Talked","Talk","Talking"];
@@ -104,68 +104,187 @@ let array_answers = [array_answer1,
     array_answer29,
     array_answer30
 ];
+let array_correct_response = [
+    "Do",
+    "Works",
+    "He is a/an",
+    "Far",
+    "Will not be able",
+    "Have you been",
+    "Had",
+    "Ever",
+    "Forward to",
+    "Was",
+    "Silent",
+    "Knew",
+    "Might",
+    "Just",
+    "Up",
+    "Shall I",
+    "Nice",
+    "You to come",
+    "Enough adult people",
+    "Is made",
+    "I left my glasses",
+    "Every couple",
+    "Plug it in",
+    "A lot of",
+    "Has not he",
+    "Feel like",
+    "Do not",
+    "Which",
+    "Any",
+    "Talk"
+];
 
 let count_of_number_test = 1;
+let click_count = 0;
+let correct_answer_count = 0;
+let isClicked = false;
 let x = 1;
 let i = 1;
+let y = 0;
 
 answer1.addEventListener("click",function(){
-    if(answer1.textContent == array_answer1[0]) {
+    isClicked = true;
+    if(answer1.textContent == array_correct_response[y]) {
         console.log("Правильный ответ");
+        answer1.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
+        answer1.style.opacity = "70%";
+        answer1.style.color = "white";
+        block_answers();
+        correct_answer_count+=1;
     }else {
+        answer1.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
+        answer1.style.opacity = "70%";
+        answer1.style.color = "white";
         console.log("НЕ правильный ответ");
-        console.log(answer1.textContent);
+        block_answers();
     }
 })
 answer2.addEventListener("click",function(){
-    if(answer2.textContent == array_answer1[0]) {
+    isClicked = true;
+    if(answer2.textContent == array_correct_response[y]) {
         console.log("Правильный ответ");
+        answer2.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
+        answer2.style.opacity = "70%";
+        answer2.style.color = "white";
+        block_answers();
+        correct_answer_count+=1;
     }else {
+        answer2.style.background ="linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
+        answer2.style.opacity = "70%";
+        answer2.style.color = "white";
         console.log("НЕ правильный ответ");
-        console.log(answer1.textContent);
+        block_answers();
     }
 })
 answer3.addEventListener("click",function(){
-    if(answer3.textContent == array_answer1[0]) {
+    isClicked = true;
+    if(answer3.textContent == array_correct_response[y]) {
         console.log("Правильный ответ");
+        answer3.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
+        answer3.style.opacity = "70%";
+        answer3.style.color = "white";
+        correct_answer_count+=1;
+        block_answers();
     }else {
+        answer3.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
+        answer3.style.opacity = "70%";
+        answer3.style.color = "white";
         console.log("НЕ правильный ответ");
-        console.log(answer1.textContent);
+        block_answers();
     }
 })
 answer4.addEventListener("click",function(){
-    if(answer4.textContent == array_answer1[0]) {
+    isClicked = true;
+    if(answer4.textContent == array_correct_response[y]) {
         console.log("Правильный ответ");
+        answer4.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
+        answer4.style.opacity = "70%";
+        answer4.style.color = "white";
+        correct_answer_count+=1;
+        block_answers();
     }else {
+        answer4.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
+        answer4.style.opacity = "70%";
+        answer4.style.color = "white";
         console.log("НЕ правильный ответ");
-        console.log(answer1.textContent);
+        block_answers();
     }
 })
 
+
+function block_answers() {
+    answer1.style.pointerEvents = "none";
+    answer2.style.pointerEvents = "none";
+    answer3.style.pointerEvents = "none";
+    answer4.style.pointerEvents = "none";
+}
+function unblock_answers() {
+    answer1.style.pointerEvents = "auto";
+    answer2.style.pointerEvents = "auto";
+    answer3.style.pointerEvents = "auto";
+    answer4.style.pointerEvents = "auto";
+}
+
+
+
+
+
 btn_next.addEventListener('click',function(){
-    if(i >= array_questions.length) {
-        i = 0;
-        x = 0;
-        count_of_number_test = 0;
-    }
+    if(isClicked == false) {
+        alert("Выберите вариант ответа!");
+       
+    } else {
+        btn_next.style.pointerEvents = "auto";
 
-    test_number.innerHTML = count_of_number_test+=1;
-    question_text.innerHTML = array_questions[i];
-    i++;
-
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
+        if(i >= array_questions.length) {
+            i = 0;
+            x = 0;
+            y = -1;
+            count_of_number_test = 0;
         }
+    
+        test_number.innerHTML = count_of_number_test+=1;
+        question_text.innerHTML = array_questions[i];
+        i++;
+    
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+    
+        shuffleArray(array_answers[x]);
+    
+        let array = array_answers[x];
+        for(let i = 0; i < 4; i++) {
+            console.log(array);
+            array_answer_elements[i].innerHTML = array[i];
+        }
+        x++;    
+        y++;
+        console.log(y);
+    
+    
+        answer1.style.background = "white";
+        answer1.style.opacity = "100%";
+        answer1.style.color = "black";
+    
+        answer2.style.background = "white";
+        answer2.style.opacity = "100%";
+        answer2.style.color = "black";
+    
+        answer3.style.background = "white";
+        answer3.style.opacity = "100%";
+        answer3.style.color = "black";
+    
+        answer4.style.background = "white";
+        answer4.style.opacity = "100%";
+        answer4.style.color = "black";
+        unblock_answers();
+        isClicked = false;
     }
-
-    shuffleArray(array_answers[x]);
-
-    let array = array_answers[x];
-    for(let i = 0; i < 4; i++) {
-        console.log(array);
-        array_answer_elements[i].innerHTML = array[i];
-    }
-    x++;    
 });
