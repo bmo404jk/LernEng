@@ -80,17 +80,13 @@ nav ul li:hover{
     cursor: pointer;
     opacity: 70%;
 }
-nav ul li:last-child:hover{
+nav ul li:last-child:active{
     cursor: pointer;
     background: linear-gradient(45deg, #1E0E62, #25DAC5);
     opacity: 70%;
 }
-.buttom_container button:hover {
-    cursor: pointer;
-    background: linear-gradient(45deg, #1E0E62, #25DAC5);
-    opacity: 70%;
-}
-.bottom_content button:hover {
+
+.bottom_content button:active {
     cursor: pointer;
     opacity: 70%;
     background: linear-gradient(45deg, #1E0E62, #E93A7D);
