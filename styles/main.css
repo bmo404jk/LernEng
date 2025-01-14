@@ -131,4 +131,7 @@ nav ul li:last-child:active{
         transform: scale(1); /* Возвращение к нормальному размеру */
     }
 }
+.button_next:active{
+    transform: scale(1.05);
+}
 
