@@ -90,6 +90,7 @@ nav ul li:last-child:active{
     cursor: pointer;
     opacity: 70%;
     background: linear-gradient(45deg, #1E0E62, #E93A7D);
+    transform: scale(1.05);
 }
 .bottom_content button {
     cursor: pointer;
@@ -134,4 +135,9 @@ nav ul li:last-child:active{
 .button_next:active{
     transform: scale(1.05);
 }
-
+.burger_menu_content ul li:hover{
+    transform: scale(1.03);
+}
+.burger_menu_content ul li:last-child a:hover{
+    transform: scale(1.03);
+}
