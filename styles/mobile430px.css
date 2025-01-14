@@ -433,3 +433,12 @@ body{
 	display: flex;
 	flex-direction: column;
 }
+.result_block_explanation section {
+	text-align: left;
+	max-width: 240px;
+	min-height: 200px;
+}
+.result_block_explanation section p {
+	font-size: 20px;
+	font-weight: bold;
+}
