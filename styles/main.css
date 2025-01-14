@@ -144,6 +144,6 @@ nav ul li:last-child:active{
 .burger_menu_content ul li a{
    box-shadow: 0px 0px 7px #25DAC5;
 }
-.burger_menu_content ul li a:last-child{
+.burger_menu_content ul li:last-child a{
      box-shadow: 0px 0px 7px #E93A7D;
 }
