@@ -1,12 +1,22 @@
 let test_number = document.querySelector(".number_of_question");
 let question_text = document.querySelector(".question_text1");
 
-let answer1 = document.querySelector(".answer1");
-let answer2 = document.querySelector(".answer2");
-let answer3 = document.querySelector(".answer3");
-let answer4 = document.querySelector(".answer4");
+let answer1_label = document.querySelector(".answer1");
+let answer2_label = document.querySelector(".answer2");
+let answer3_label = document.querySelector(".answer3");
+let answer4_label = document.querySelector(".answer4");
 
-let array_answer_elements = [answer1,answer2,answer3,answer4];
+let answer1_input = document.querySelector(".answer1_input");
+let answer2_input = document.querySelector(".answer2_input");
+let answer3_input = document.querySelector(".answer3_input");
+let answer4_input = document.querySelector(".answer4_input");
+
+let answer1_text = document.querySelector(".answer1_text");
+let answer2_text = document.querySelector(".answer2_text");
+let answer3_text = document.querySelector(".answer3_text");
+let answer4_text = document.querySelector(".answer4_text");
+
+let array_answer_elements = [answer1_text,answer2_text,answer3_text,answer4_text];
 
 let btn_next = document.querySelector(".button_next");
 
@@ -139,106 +149,70 @@ let array_correct_response = [
 
 let count_of_number_test = 1;
 window.correct_answer_count = 0;
-let isClicked = false;
 let x = 1;
 let i = 1;
 let y = 0;
 
-answer1.addEventListener("click",function(){
-    isClicked = true;
-    if(answer1.textContent == array_correct_response[y]) {
-        console.log("Правильный ответ");
-        answer1.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
-        answer1.style.opacity = "70%";
-        answer1.style.color = "white";
-        block_answers();
-        window.correct_answer_count+=1;
-    }else {
-        answer1.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
-        answer1.style.opacity = "70%";
-        answer1.style.color = "white";
-        console.log("НЕ правильный ответ");
-        block_answers();
-    }
-})
-answer2.addEventListener("click",function(){
-    isClicked = true;
-    if(answer2.textContent == array_correct_response[y]) {
-        console.log("Правильный ответ");
-        answer2.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
-        answer2.style.opacity = "70%";
-        answer2.style.color = "white";
-        block_answers();
-        window.correct_answer_count+=1;
-    }else {
-        answer2.style.background ="linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
-        answer2.style.opacity = "70%";
-        answer2.style.color = "white";
-        console.log("НЕ правильный ответ");
-        block_answers();
-    }
-})
-answer3.addEventListener("click",function(){
-    isClicked = true;
-    if(answer3.textContent == array_correct_response[y]) {
-        console.log("Правильный ответ");
-        answer3.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
-        answer3.style.opacity = "70%";
-        answer3.style.color = "white";
-        window.correct_answer_count+=1;
-        block_answers();
-    }else {
-        answer3.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
-        answer3.style.opacity = "70%";
-        answer3.style.color = "white";
-        console.log("НЕ правильный ответ");
-        block_answers();
-    }
-})
-answer4.addEventListener("click",function(){
-    isClicked = true;
-    if(answer4.textContent == array_correct_response[y]) {
-        console.log("Правильный ответ");
-        answer4.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
-        answer4.style.opacity = "70%";
-        answer4.style.color = "white";
-        window.correct_answer_count+=1;
-        block_answers();
-    }else {
-        answer4.style.background = "linear-gradient(45deg,rgb(98, 14, 87), #E93A7D)";
-        answer4.style.opacity = "70%";
-        answer4.style.color = "white";
-        console.log("НЕ правильный ответ");
-        block_answers();
-    }
-})
+
+const answerInputs = document.querySelectorAll('input[type="radio"]');
+const answerLabels = document.querySelectorAll('.answer_container label');
+
+answerInputs.forEach((input) => {
+    input.addEventListener("change", () => {
+        // Сброс стилей для всех меток
+        answerLabels.forEach(label => {
+            label.style.background = "white";
+            label.style.opacity = "100%";
+            label.style.color = "black";
+        });
+
+        // Применим стили только к выбранному варианту
+        if (input.checked) {
+            const label = input.closest('label');
+            label.style.background = "linear-gradient(45deg,#E93A7D,#25DAC5)";
+            label.style.opacity = "80%";
+            label.style.color = "white";
+        }
+    });
+});
 
 
-function block_answers() {
-    answer1.style.pointerEvents = "none";
-    answer2.style.pointerEvents = "none";
-    answer3.style.pointerEvents = "none";
-    answer4.style.pointerEvents = "none";
-}
-function unblock_answers() {
-    answer1.style.pointerEvents = "auto";
-    answer2.style.pointerEvents = "auto";
-    answer3.style.pointerEvents = "auto";
-    answer4.style.pointerEvents = "auto";
-}
 
 
 
 
 
 btn_next.addEventListener('click',function(){
-    console.log("correct answer:" + window.correct_answer_count);
-    if(isClicked == false) {
-        alert("Выберите вариант ответа!");
-       
-    } else {
+    if(answer1_input.checked && answer1_text.textContent === array_correct_response[y]) {
+        console.log("Правильный ответ");
+        answer1_input.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
+        answer1_input.style.opacity = "70%";
+        answer1_input.style.color = "white";
+        window.correct_answer_count+=1;
+    }
+    if(answer2_input.checked && answer2_text.textContent === array_correct_response[y]) {
+        console.log("Правильный ответ");
+        answer2_input.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
+        answer2_input.style.opacity = "70%";
+        answer2_input.style.color = "white";
+        window.correct_answer_count+=1;
+    }
+    if(answer3_input.checked && answer3_text.textContent === array_correct_response[y]) {
+        console.log("Правильный ответ");
+        answer3_input.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
+        answer3_input.style.opacity = "70%";
+        answer3_input.style.color = "white";
+        window.correct_answer_count+=1;
+    }
+    if(answer4_input.checked && answer4_text.textContent === array_correct_response[y]) {
+        console.log("Правильный ответ");
+        answer4_input.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
+        answer4_input.style.opacity = "70%";
+        window.correct_answer_count+=1;
+    }
+    
         btn_next.style.pointerEvents = "auto";
-
+        console.log("correct answer:" + window.correct_answer_count);
         if(i >= array_questions.length) {
             i = 0;
             x = 0;
@@ -275,22 +249,20 @@ btn_next.addEventListener('click',function(){
             });
         }
     
-        answer1.style.background = "white";
-        answer1.style.opacity = "100%";
-        answer1.style.color = "black";
-    
-        answer2.style.background = "white";
-        answer2.style.opacity = "100%";
-        answer2.style.color = "black";
-    
-        answer3.style.background = "white";
-        answer3.style.opacity = "100%";
-        answer3.style.color = "black";
-    
-        answer4.style.background = "white";
-        answer4.style.opacity = "100%";
-        answer4.style.color = "black";
-        unblock_answers();
+        
+       
         isClicked = false;
-    }
-});
+        setDefaultOptionForCheckbox();
+    
+}); 
+
+function setDefaultOptionForCheckbox() {
+    answerLabels.forEach(label => {
+        label.style.background = "white";
+        label.style.opacity = "100%";
+        label.style.color = "black";
+    });
+    answerInputs.forEach((input) => {
+        input.checked = false;
+    });
+}
