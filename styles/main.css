@@ -9,10 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    user-select: none; /* Для поддерживаемых браузеров */
-    -webkit-user-select: none; /* Для Safari */
-    -moz-user-select: none; /* Для Firefox */
-    -ms-user-select: none; /* Для Internet Explorer и Edge */
 }
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -95,6 +91,10 @@ nav ul li:last-child:active{
     opacity: 70%;
     background: linear-gradient(45deg, #1E0E62, #E93A7D);
 }
+.bottom_content button {
+    cursor: pointer;
+    animation: pulse 2s infinite; /* Применение анимации */
+}
 .burger_menu_content li:hover{
     cursor: pointer;
 }
@@ -119,5 +119,16 @@ nav ul li:last-child:active{
 .button_next:hover{
 	cursor: pointer;
 	
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1); /* Нормальный размер */
+    }
+    50% {
+        transform: scale(1.05); /* Увеличенный размер */
+    }
+    100% {
+        transform: scale(1); /* Возвращение к нормальному размеру */
+    }
 }
 
