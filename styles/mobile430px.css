@@ -204,7 +204,6 @@ body{
 		background-color:var(--color_red);
 		border-radius: 25px;
 		text-align: center;
-		box-shadow: 0 0 15px #E93A7D;
 	}
 	/*tests*/
 	.tests_container{
@@ -260,7 +259,6 @@ body{
 		border-radius: 25px;
 		text-align: center;
 		margin-right:7px;
-		box-shadow: 0px 0px 10px #25DAC5;
 	}
 	.buttom_container button:last-child {
 		border: 0px;
@@ -272,7 +270,6 @@ body{
 		background-color:var(--color_green);
 		border-radius: 25px;
 		text-align: center;
-		box-shadow: 0px 0px 10px #25DAC5;
 	}
 
 
@@ -323,7 +320,7 @@ body{
 .answer_container {
 	display: flex;
 	flex-direction: column;
-	padding-left: 20px;
+	padding-left: 30px;
 	margin-top: 30px;
 	color: black;
 }
@@ -342,7 +339,7 @@ body{
 	text-align: center;
 	border-radius: 15px;
 	margin-bottom: 20px;
-	box-shadow: 0 0 15px #fff;
+	
 }
 .answer2{
 	padding: 10px;
@@ -351,7 +348,7 @@ body{
 	text-align: center;
 	border-radius: 15px;
 	margin-bottom: 20px;
-	box-shadow: 0 0 15px #fff;
+	
 }
 .answer3{
 	padding: 10px;
@@ -360,7 +357,7 @@ body{
 	text-align: center;
 	border-radius: 15px;
 	margin-bottom: 20px;
-	box-shadow: 0 0 15px #fff;
+	
 }
 .answer4{
 	padding: 10px;
@@ -369,7 +366,7 @@ body{
 	text-align: center;
 	border-radius: 15px;
 	margin-bottom: 50px;
-	box-shadow: 0 0 15px #fff;
+	
 }
 .answer1_input,.answer2_input,.answer3_input,.answer4_input{
 	display: none;
@@ -399,9 +396,7 @@ body{
 	border: 0px;
 	color: white;
 	margin-bottom: 30px;
-	box-shadow: 0 0 15px #E93A7D;
 }
-
 
 /*results page block*/
 .result_block{
