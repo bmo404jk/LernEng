@@ -19,7 +19,6 @@ body{
     display: flex;
 	justify-content: center;
   	align-items: center;
-	min-height: 100vh;
 	/* background: linear-gradient(to bottom, rgb(240, 169, 196), rgb(255, 255, 255)); */
 }
   	 main{
@@ -403,7 +402,6 @@ body{
 	margin-top: 3em;
 	min-width: 250px;
 	max-width: 250px;
-	min-width: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center
