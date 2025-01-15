@@ -1,16 +1,26 @@
 let burger_menu = document.querySelector(".burger_menu");
 let burger_menu_content = document.querySelector(".burger_menu_content");
+let nav_mobile = document.querySelector(".nav_mobile");
 
-burger_menu.addEventListener('click',function() {
-    console.log(1);
-    if(burger_menu_content.style.display == "none") {
-        document.documentElement.style.overflow = 'hidden';
-         burger_menu_content.style.display = "flex";
-         burger_menu_content.style.position = "fixed";
-         burger_menu_content.style.zIndex = '100';
+
+burger_menu.addEventListener('click', function() {
+    burger_menu_content.classList.toggle('expanded');
+
+    const contentBlocks = document.querySelectorAll('.benefit_block');
+    if (burger_menu_content.classList.contains('expanded')) {
+        // Скрываем элементы
+        contentBlocks.forEach(block => {
+            block.style.display = "none"; // Скрываем блоки при открытом меню
+        });
+        nav_mobile.style.position = "relative"; // Позиционирование навигации
+       // document.documentElement.style.overflow = 'hidden'; // Блокируем прокрутку
     } else {
-        burger_menu_content.style.display = "none";
-        document.documentElement.style.overflow = 'auto';
+        // Показываем элементы
+        contentBlocks.forEach(block => {
+            block.style.display = "flex"; // Показываем блоки при закрытом меню
+        });
+        nav_mobile.style.position = "fixed"; // Устанавливаем фиксированное позиционирование
+        document.documentElement.style.overflow = 'inherit'; // Восстанавливаем прокрутку
     }
 });
 
