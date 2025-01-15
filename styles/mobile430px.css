@@ -519,6 +519,7 @@ body{
 	display: flex;
 	flex-direction: column;
 	max-width: 265px;
+	margin-top: -45px;
 }
 .title_resources h1{
 	margin-top: 20px;
@@ -552,8 +553,26 @@ body{
 	max-height: 100%; 
     opacity: 1;
 }
-.applications_card h3 {
+.h3_title_1 {
 	background-color: #25DAC5;
+	color: white;
+	padding: 6px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5px;
+}
+.h3_title_2 {
+	background-color: #998ec9;
+	color: white;
+	padding: 6px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5px;
+}
+.h3_title_3 {
+	background-color: #bd5284;
 	color: white;
 	padding: 6px;
 	border-radius: 10px;
@@ -579,4 +598,7 @@ body{
 .card_text {
 	margin-top: 30px;
 	padding-bottom: 30px;
+}
+main section:last-child {
+	padding-bottom: 40px;
 }
