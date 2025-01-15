@@ -302,6 +302,7 @@ body{
 	margin-bottom: 30px;
 }
 .test_text {
+	color: #1E0E62;
 	margin-top: 45px;
 	text-align: center;
 	margin-bottom: -75px;
@@ -486,4 +487,31 @@ body{
 	padding: 10px;
 	border-radius: 10px;
 	background-color: rgb(255, 242, 129);
+}
+.benefit_block {
+	display: flex;
+	flex-direction: column;
+	max-width: 265px;
+	margin-top: 20px;
+}
+.benefit_block h1{
+	margin-top: 20px;
+	color: #1E0E62;
+	font-size: 18px;
+	font-weight: bold;
+}
+.benefit_block h2{
+	border-radius: 10px;
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: initial;
+}
+.benefit_block h3 {
+	border-radius: 10px;
+	padding: 10px;
+	background-color: #25DAC5;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 14px;
 }
