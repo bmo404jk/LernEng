@@ -439,6 +439,49 @@ body{
 	min-height: 200px;
 }
 .result_block_explanation section p {
+	margin-top: 10px;
 	font-size: 20px;
 	font-weight: bold;
+	margin-bottom: 20px;
+}
+.result_block_explanation section span {
+	font-size: 15px;
+}
+
+.abc_section {
+	margin-top: 30px;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	border:1px solid black;
+}
+.a1 p{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: aquamarine;
+}
+.a2 p{
+	padding: 10px;
+	border-radius: 10px;
+	background-color:rgb(250, 201, 146);
+}
+.b1 p{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgb(88, 255, 88);
+}
+.b2 p{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgb(122, 120, 255);
+}
+.c1 p{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgb(255, 147, 147);
+}
+.c2 p{
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgb(255, 242, 129);
 }
