@@ -404,7 +404,8 @@ body{
 	max-width: 250px;
 	display: flex;
 	flex-direction: column;
-	align-items: center
+	align-items: center;
+	margin-bottom: 25px;
 }
 .correct_result {
 	font-size: 20px;
@@ -432,6 +433,7 @@ body{
 .result_block_explanation {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 }
 .result_block_explanation section {
 	text-align: left;
