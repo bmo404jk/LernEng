@@ -495,8 +495,9 @@ body{
 .benefit_block h1{
 	margin-top: 20px;
 	color: #1E0E62;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: bold;
+	margin-top: -35px;
 }
 .benefit_block h2{
 	border-radius: 10px;
