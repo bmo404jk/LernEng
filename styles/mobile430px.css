@@ -515,3 +515,68 @@ body{
 	font-weight: bold;
 	margin-bottom: 14px;
 }
+.title_resources {
+	display: flex;
+	flex-direction: column;
+	max-width: 265px;
+}
+.title_resources h1{
+	margin-top: 20px;
+	color: #1E0E62;
+}
+.title_resources p{
+	margin-top: 20px;
+	
+}
+.applications {
+	display: flex;
+	flex-direction: column;
+	max-width: 265px;
+	min-width: 265px;
+	margin-top: 20px;
+}
+.applications_card {
+	display: flex;
+	flex-direction: column;
+	max-width: 265px;
+	margin-top: 20px;
+	text-align: left;
+}
+.card_container {
+	max-height: 0;
+	opacity: 0;
+ 	overflow: hidden;
+ 	transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.card_container.expanded  {
+	max-height: 100%; 
+    opacity: 1;
+}
+.applications_card h3 {
+	background-color: #25DAC5;
+	color: white;
+	padding: 6px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 5px;
+}
+.applications_card h3 img {
+	width: 25px;
+	height: 25px;
+	padding-right: 5px;
+}
+.applications_card ul {
+	margin-top: 10px;
+}
+.applications_card ul li {
+	font-weight: bold;
+}
+.applications_card ul li span {
+	font-weight: lighter;
+	font-size: 13px;
+}
+.card_text {
+	margin-top: 30px;
+	padding-bottom: 30px;
+}

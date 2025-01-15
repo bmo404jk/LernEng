@@ -132,6 +132,20 @@ nav ul li:last-child:active{
         transform: scale(1); /* Возвращение к нормальному размеру */
     }
 }
+@keyframes collapse {
+    0% {
+        display: none; /* Нормальный размер */
+    }
+    50% {
+       
+    }
+    100% {
+        display: block; /* Возвращение к нормальному размеру */
+    }
+}
+.card_container {
+    animation: collapse;
+}
 .button_next:active{
     transform: scale(1.05);
 }
