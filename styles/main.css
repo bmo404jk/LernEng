@@ -163,6 +163,10 @@ nav ul li:last-child:active{
     cursor: pointer;
     transform: scale(1.06);
 }
+.A2_btn:active{
+    cursor: pointer;
+    transform: scale(1.06);
+}
 .A1_p {
     font-size: 20px;
     font-weight: medium;
