@@ -12,9 +12,9 @@ function show_result() {
             p1.style.fontSize = "20px";
             p2.style.fontSize = "20px";
             if (window.count_correct >= 21) {
-                engleesh_level.innerHTML = "Тест пройден";
+                p2.innerHTML = "Тест пройден, вы большой молодец &#129321;";
             } else{
-                engleesh_level.innerHTML = "Тест не пройден, не набрано необходимо количество баллов";
+                p2.innerHTML = "Тест не пройден, не набрано необходимое количество баллов, попробуйте снова(или продолжите обучение) &#129300;";
             }
         });
     });
