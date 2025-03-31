@@ -176,12 +176,6 @@ answerInputs.forEach((input) => {
     });
 });
 
-
-
-
-
-
-
 btn_next.addEventListener('click',function(){
     if(answer1_input.checked && answer1_text.textContent === array_correct_response[y]) {
         console.log("Правильный ответ");
@@ -249,8 +243,6 @@ btn_next.addEventListener('click',function(){
             });
         }
     
-        
-       
         isClicked = false;
         setDefaultOptionForCheckbox();
     

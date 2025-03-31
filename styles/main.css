@@ -155,3 +155,11 @@ nav ul li:last-child:active{
 .burger_menu_content ul li:last-child a:hover{
     transform: scale(1.03);
 }
+
+.A1_btn{
+    cursor: pointer;
+}
+.A1_btn:active{
+    cursor: pointer;
+    transform: scale(1.1);
+}

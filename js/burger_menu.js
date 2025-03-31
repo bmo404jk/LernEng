@@ -15,3 +15,8 @@ document.querySelector(".quick_test_btn").addEventListener('click', function() {
     localStorage.setItem('count_current_answer', window.correct_answer_count);
     window.location.href = "test_page.html";
 });
+
+document.querySelector(".A1_btn").addEventListener('click', function() {
+    localStorage.setItem('count_current_answer', window.correct_answer_count);
+    window.location.href = "testA1.html";
+});
