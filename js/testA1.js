@@ -21,105 +21,99 @@ let array_answer_elements = [answer1_text, answer2_text, answer3_text, answer4_t
 let btn_next = document.querySelector(".button_next");
 
 let array_questions = [
-    "Какая погода сегодня?",  
-    "Какой цвет у моря?",  
-    "Что такое 'яблоко' на английском?",  
-    "Какой праздник мы отмечаем 31 декабря?",  
-    "Какое время года идет после лета?",  
-    "Какой у вас любимый вид спорта?",  
-    "Какой язык является официальным в США?",  
-    "Какой из этих шагов для приготовления омлета?",  
-    "Какой самый высокий океан в мире?",  
-    "Какой цвет имеет трава?",  
-    "Какой месяц идет после января?",  
-    "Какой из этих фильмов является комедией?",  
-    "Какой день недели перед воскресеньем?",  
-    "Что такое 'книга' на русском?",  
-    "Какой из этих животных является млекопитающим?",  
-    "Какой город является столицей России?",  
-    "Что значит 'поздравляю' на английском?",  
-    "Какое натуральное явление происходит во время дождя?",  
-    "Какой продукт обычно используется для приготовления хлеба?",  
-    "Какой фрукт содержит много витамина C?",  
-    "Какой из этих глаголов - неправильный?",  
-    "Что такое 'вода' на английском?",  
-    "Какой у вас любимый певец?",  
-    "Какой цвет имеет небо в ясный день?",  
-    "Какой день Святого Валентина?",  
-    "Какой шоколад самый сладкий?",  
-    "Что обычно дарят на Новый год?",  
-    "Какой из этих собак - самая маленькая порода?",  
-    "Какой овощ обычно используется для приготовления салата?",  
-    "Какое время года бывает на севере зимой?",  
-    "Какой из этих музыкантов сыграл в 'Битлах'?"
+    "Какой из этих вариантов является правильным для того, чтобы сказать 'Я люблю мякоть апельсинов'?",
+    "Какой из этих вариантов правильный для 'Он не хочет пить воду'?",
+    "Как вы скажете 'У меня есть собака' на английском?",
+    "Какой правильный вариант 'Она в школе'?",
+    "Какой вопрос правильный для 'Где ты живешь?'?",
+    "Как будет 'Они не играют в футбол' на английском?",
+    "Как правильно сказать 'Это моя книга'?",
+    "Какой из этих вариантов правильный для 'Я учусь в университете'?",
+    "Как будет 'У него есть кошка'?",
+    "Как правильно перевести 'Я часто хожу в магазин'?",
+    "Какой правильный вариант для 'Она работает в офисе'?",
+    "Как будет 'Ты любишь кофе?'?",
+    "Как сказать 'Это ложка'?",
+    "Как правильно перевести 'Он всегда смеется'?",
+    "Какой вариант правильный для 'Я не знаю, куда идти'?",
+    "Как будет 'Эта еда вкусная'?",
+    "Как правильно сказать 'Ты работаешь завтра?'?",
+    "Как будет 'Мне нужно пойти на почту'?",
+    "Какой вариант правильный для 'Ему не нравится эта музыка'?",
+    "Как правильно сказать 'Вы из России'?",
+    "Как будет 'У них есть две машины'?",
+    "Как правильно сказать 'Мой брат спортивный'?",
+    "Как будет 'Я только что пришел'?",
+    "Как правильно сказать 'Она хорошо поет'?",
+    "Как вы спросите 'Ты хочешь поесть?'?",
+    "Как правильно перевести 'Он читает книгу'?",
+    "Как сказать 'Я люблю гулять по парку'?",
+    "Как правильно сказать 'Ты видел его вчера?'?",
+    "Как будет 'Это мой любимый фильм'?",
+    "Какой вопрос правильный для 'Где они?'?"
 ];
 
 let array_answers = [
-    ["Sunny", "Cold", "Rainy", "Windy"],
-    ["Blue", "Green", "Yellow", "Red"],
-    ["Apple", "Banana", "Grapes", "Orange"],
-    ["New Year", "Christmas", "Valentine's Day", "Easter"],
-    ["Autumn", "Winter", "Spring", "Summer"],
-    ["Football", "Chess", "Diving", "Reading"],
-    ["Spanish", "English", "French", "German"],
-    ["Break the eggs", "Boil the water", "Fry the meat", "Chop the vegetables"],
-    ["Pacific", "Atlantic", "Indian", "Arctic"],
-    ["Green", "Yellow", "Blue", "Red"],
-    ["February", "March", "April", "January"],
-    ["Matrix", "Titanic", "Inception", "Joker"],
-    ["Saturday", "Friday", "Monday", "Thursday"],
-    ["Book", "Magazine", "Story", "Novel"],
-    ["Cat", "Dog", "Fish", "Reptile"],
-    ["Moscow", "New York", "London", "Paris"],
-    ["Congratulations", "Hello", "Goodbye", "Thank you"],
-    ["Rainbow", "Shadow", "Fog", "Mist"],
-    ["Flour", "Sugar", "Salt", "Pepper"],
-    ["Orange", "Apple", "Banana", "Lemon"],
-    ["Go", "Wants", "Swim", "Be"],
-    ["Water", "Milk", "Juice", "Tea"],
-    ["Imagine Dragons", "Taylor Swift", "Drake", "Adele"],
-    ["Blue", "Gray", "Green", "Red"],
-    ["14 февраля", "20 декабря", "1 января", "31 октября"],
-    ["Milk chocolate", "Dark chocolate", "White chocolate", "Bitter chocolate"],
-    ["Gifts", "Flowers", "Food", "Cards"],
-    ["Chihuahua", "Poodle", "German Shepherd", "Bulldog"],
-    ["Tomato", "Potato", "Cucumber", "Carrot"],
-    ["Snowy", "Sunny", "Windy", "Rainy"],
-    ["John Lennon", "Paul McCartney", "Ringo Starr", "George Harrison"]
+    ["I love the orange.", "I love orange.", "I loves the orange.", "I love oranges."],
+    ["He don’t want to drink water.", "He doesn’t want drink water.", "He doesn’t want to drink water.", "He want to drink water."],
+    ["I have a dog.", "I has a dog.", "I having a dog.", "I haves a dog."],
+    ["She is in school.", "She are in school.", "She am in school.", "She be in school."],
+    ["Where you live?", "Where do you live?", "Where lives you?", "Where are you live?"],
+    ["They don't play football.", "They doesn’t play football.", "They not play football.", "They doesn’t plays football."],
+    ["This are my book.", "This is my book.", "This my book.", "This is books."],
+    ["I study in university.", "I studies in the university.", "I am studying in the university.", "I study at the university."],
+    ["He has a cat.", "He have a cat.", "He haves a cat.", "He has cat."],
+    ["I go to the shop often.", "I often goes to the shop.", "I often go to the shop.", "I goes to the shop often."],
+    ["She work in the office.", "She works in the office.", "She working in the office.", "She is working in office."],
+    ["Do you like coffee?", "You like coffee?", "Do you likes coffee?", "You does like coffee?"],
+    ["It is a spoon.", "This a spoon.", "This is a spoon.", "It a spoon."],
+    ["He is always laugh.", "He always laughing.", "He always laughs.", "He is always laughs."],
+    ["I don’t know where to go.", "I know not where to go.", "I doesn’t know where to go.", "I not know where to go."],
+    ["This food is tasty.", "This foods is tasty.", "That food are tasty.", "This food are tasty."],
+    ["Are you work tomorrow?", "Do you work tomorrow?", "You work tomorrow?", "Are you working tomorrow?"],
+    ["I need to go to post.", "I need to go to the post office.", "I needs to go to the post.", "I need to going to the post office."],
+    ["He don’t like this music.", "He doesn’t like this music.", "He doesn’t likes this music.", "He like not this music."],
+    ["Are you from Russia?", "Are you in Russia?", "Do you from Russia?", "You are from Russia?"],
+    ["They have two car.", "They has two cars.", "They have two cars.", "They having two cars."],
+    ["My brother is sporty.", "My brother are sporty.", "My brother is sport.", "My brother sporty."],
+    ["I just come.", "I just came.", "I coming just now.", "I came just."],
+    ["She sing well.", "She sings good.", "She sings well.", "She is singing good."],
+    ["You want to eat?", "Do you want eat?", "Do you want to eat?", "You wanting to eat?"],
+    ["He read a book.", "He is reading book.", "He reads a book.", "He reading a book."],
+    ["I love to walk in park.", "I loves to walk in the park.", "I love walking in the park.", "I love walks in the park."],
+    ["Did you see him yesterday?", "You saw him yesterday?", "Did you saw him yesterday?", "Did you seen him yesterday?"],
+    ["This is my favourite movie.", "This my favourite movie.", "This is favourite movie.", "This are my favourite movie."],
+    ["Where are they?", "Where they are?", "Where is they?", "Where they?"]
 ];
 
 let array_correct_response = [
-    "Sunny",
-    "Blue",
-    "Apple",
-    "New Year",
-    "Autumn",
-    "Football",
-    "English",
-    "Break the eggs",
-    "Pacific",
-    "Green",
-    "February",
-    "Titanic",
-    "Saturday",
-    "Book",
-    "Cat",
-    "Moscow",
-    "Congratulations",
-    "Rainbow",
-    "Flour",
-    "Orange",
-    "Go",
-    "Water",
-    "Imagine Dragons",
-    "Blue",
-    "14 февраля",
-    "Milk chocolate",
-    "Gifts",
-    "Chihuahua",
-    "Tomato",
-    "Snowy",
-    "John Lennon"
+    "Do you want to eat?",  // d
+    "He reads a book.",     // c
+    "I love walking in the park.", // a
+    "Did you see him yesterday?", // a
+    "This is my favourite movie.", // b
+    "Where are they?",      // a
+    "They are in the park.", // b
+    "What do you want to eat?", // d
+    "I love to walk in the park.", // a
+    "He is reading a book.", // c
+    "Did you see him yesterday?", // b
+    "This is my favourite movie.", // a
+    "I love swimming.",      // c
+    "I am very happy.",      // c
+    "I have a dog.",         // a
+    "She looks nice today.",  // a
+    "He is my brother.",     // b
+    "They arrived yesterday.", // b
+    "They are my friends.",   // b
+    "I am going home.",      // a
+    "He is studying hard.",   // c
+    "She will call you later.", // a
+    "We went to the cinema.", // c
+    "I enjoy reading books.", // c
+    "He likes to play football.", // a
+    "I need some help.",      // a
+    "Can you help me, please?" // a
 ];
 
 let count_of_number_test = 1;
