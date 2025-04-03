@@ -208,7 +208,7 @@ btn_next.addEventListener('click', function () {
         btn_next.innerHTML = "Завершить тестирование";
         btn_next.addEventListener("click", function () {
             localStorage.setItem('count_current_answer', window.correct_answer_count);
-            window.location.href = "resultA1.html";
+            window.location.href = "resultB1.html";
         });
     }
 
