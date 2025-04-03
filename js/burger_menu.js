@@ -25,3 +25,8 @@ document.querySelector(".A2_btn").addEventListener('click', function() {
     localStorage.setItem('count_current_answer', window.correct_answer_count);
     window.location.href = "testA2.html";
 });
+
+document.querySelector(".B1_btn").addEventListener('click', function() {
+    localStorage.setItem('count_current_answer', window.correct_answer_count);
+    window.location.href = "testB1.html";
+});

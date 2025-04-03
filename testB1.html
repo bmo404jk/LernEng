@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LernEng</title>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/main.css">
+		<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main>
+			<header>
+				<div class="obj_container">
+					<img class="obj" src="img/object.svg">
+					<img class="obj2" src="img/obj2.svg">
+					<img class="obj3" src="img/obj3.svg">
+				</div>
+				<nav>
+					<div class="logo">
+						<img src="img/Group.svg">
+						<p>LernEng</p>
+					</div>
+					<section class="burger_menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</section>
+					<ul>
+						<li><a href="benefit_english.html">Польза изучения английского</a></li>
+						<li><a href="resources_for_lerning.html">Ресурсы для изучения</a></li>
+						<li><a href="">CEFR</a></li>
+						<li><a href="CEFR.html">Наши тесты</a></li>
+						<li><a href="index.html">В начало</a></li>
+					</ul>
+				</nav>
+				<section class="bottom_content">
+					<div class="burger_menu_content">
+						<ul>
+							<li><a href="benefit_english.html">Польза изучения английского</a></li>
+							<li><a href="resources_for_lerning.html">Ресурсы для изучения</a></li>
+							<li><a href="CEFR.html">CEFR</a></li>
+							<li><a href="index.html">В начало</a></li>
+						</ul>
+					</div>
+				</section>
+			</header>
+            <p class="test_text">Тест на уровень владения языком B1 &#129299;</p>
+			<section class="test_block_container">
+                <div class="test_block">
+                    <p class="question_text">Вопрос № <span class="number_of_question">1</span></p>
+                    <p class="question_text1">She _____ to the gym every morning.</p>
+					<div class="answer_container">
+						<label class="answer1">
+							<input type="radio" name="answer" class = "answer1_input">
+							<span class="answer1_text">go</span>
+						</label>
+						<label class="answer2">
+							<input type="radio" name="answer" class = "answer2_input">
+							<span class="answer2_text">goes</span>
+						</label>
+						<label class="answer3">
+							<input type="radio" name="answer" class = "answer3_input">
+							<span class="answer3_text">going</span>
+						</label>
+						<label class="answer4">
+							<input type="radio" name="answer" class = "answer4_input">
+							<span class="answer4_text">is go</span>
+						</label>
+					</div>
+                </div>
+                <button class="button_next">Следующий вопрос</button>
+            </section>
+		</main>
+		<script src="js/burger_menu.js"></script>
+		<script src="js/testB1.js"></script>
+	</body>
+</html>
