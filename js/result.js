@@ -11,9 +11,19 @@ function show_result() {
             correct_result.innerHTML = window.count_correct;
             p1.style.fontSize = "20px";
             p2.style.fontSize = "20px";
-             if (window.count_correct >= 12) {
-                p2.innerHTML = "Тест пройден, вы большой молодец &#129321;";
-            } else{
+             if (window.count_correct <= 2 || window.count_correct < 5) {
+                p2.innerHTML = "Тест пройден, ваш уровень владения языком A1  &#129321;";
+            } else if (window.count_correct >= 5 && window.count_correct < 7){
+                 p2.innerHTML = "Тест пройден, ваш уровень владения языком A2  &#129321;";
+            }else if (window.count_correct >= 7 && window.count_correct < 10){
+                 p2.innerHTML = "Тест пройден, ваш уровень владения языком B1  &#129321;";
+            }else if (window.count_correct >= 10 && window.count_correct < 13){
+                 p2.innerHTML = "Тест пройден, ваш уровень владения языком B2  &#129321;";
+            }else if (window.count_correct >= 13 && window.count_correct < 15){
+                 p2.innerHTML = "Тест пройден, ваш уровень владения языком С1  &#129321;";
+            } else if (window.count_correct === 15){
+                 p2.innerHTML = "Тест пройден, ваш уровень владения языком С2  &#129321;";
+            } else {
                 p2.innerHTML = "Тест не пройден, не набрано необходимое количество баллов,  попробуйте снова(или продолжите обучение) &#129300;";
             }
         });
