@@ -20,68 +20,38 @@ let array_answer_elements = [answer1_text,answer2_text,answer3_text,answer4_text
 
 let btn_next = document.querySelector(".button_next");
 
-let array_questions = ["Did you ______ anything interesting last weekend?",
-                    "I work as a doctor and my husband ______, too.",
-                    "I think _____ accountant.",
-                    "How _____ is your home town from Moscow?",
-                    "I’m afraid I _____ to come to your birthday party.",
-                    "How long _____ interested in arts?",
-                    "He hasn’t walked since he _____ that terrible accident.",
-                    "This is the best film I’ve _____ seen.",
-                    "Write me soon! I’m looking _____ your reply.",
-                    "My mother _____ born on the 3rd of August 1978.",
-                    "He kept _____ last meeting.",
-                    "If I _____ about it I’d definitely help.",
-                    "She said she _____ come, but she didn’t.",
-                    "I don’t have a cent to lend you. Sorry, I _____ bought a new TV.",
-                    "Dad gave _____ smoking when I was born.",
-                    "Do you want to hear a new story? _____ start reading?",
-                    "Melissa looks _____ in her new suit.",
-                    "Professor Higgins wants _____ to the blackboard.",
-                    "There are _____ around here to start our rally.",
-                    "This music box _____ of wood.",
-                    "Do you know where _____ ?",
-                    "He washes his car _____ month.",
-                    "The laptop won’t work unless you _____ .",
-                    "Maria has _____ old receipts in her purse.",
-                    "James has got two university degrees, _____ ?",
-                    "Do you _____ a cup of coffee?",
-                    "Do ostriches fly? No, they _____.",
-                    "_____ newspaper are you taking, the Express or the Times?",
-                    "We haven’t got _____ Indian relations.",
-                    "Pam can’t _____ to you now. She is busy."];
+let array_questions = 
+["Выберите корректное предложение:",
+"Вставьте пропущенное слово: Mary has four ____",
+"Вставьте пропущенное словосочетание: Tom wakes up at ____ (15 минут седьмого)",
+"Вставьте нужную форму глагола: Andy ____ go to school yesterday",
+"Вставьте нужное словосочетание: You need to overcome a(n) ____",
+"Вставьте нужную форму глагола: He ____ a final test tomorrow.",
+"Вставьте нужную форму глагола: Sally _ just _",
+"Вставьте нужное слово: Children have a(n) ____ ability to easily learn new things.",
+"Вставьте нужное слово: She's my wife's mom, so I call her ____",
+"Вставьте нужный предлог: I arrived ____ the airport in the evening.",
+"Вставьте нужное словосочетание: He's always so mysterious. He's a ____",
+"Вставьте нужное слово: He ____ his teeth in anger.",
+"Вставьте нужное словосочетание: Her behaviour inspired others to ____",
+"Вставьте нужную форму глагола: When you finish your chores I ____ in my office for three hours",
+"Вставьте нужную форму глагола: Lily said that she and Bob ____ because of his anger issues."];
 
-let array_answer1 = ["Do","Doing","Was","Did"];
-let array_answer2 = ["Is","Works","Does","Work"];
-let array_answer3 = ["He is a/an","His job is","His job is as","He work as a(n)"];
-let array_answer4 = ["Long","Far","Away","Many"];
-let array_answer5 = ["Will be able","Can","Will not be able","Wouldn’t"];
-let array_answer6 = ["Have you been","Have you","Are you","Be you"];
-let array_answer7 = ["Has had","Has","Had had","Had"];
-let array_answer8 = ["Already","Never","Ever","Still"];
-let array_answer9 = ["For","Forward","Forward to","Of"];
-let array_answer10 = ["Was","Is","Had","Did"];
-let array_answer11 = ["Silence","Silent","Silently","Silenced"];
-let array_answer12 = ["Had known","Knew","Have known","Know"];
-let array_answer13 = ["Will","May","Might","Can"];
-let array_answer14 = ["Had just","Just","‘ve just","Soon will"];
-
-let array_answer15 = ["Away","Off","Up","In"];
-let array_answer16 = ["Shall I","Must I","Will I","Do I"];
-let array_answer17 = ["Nice","Nicely","Such nice","Like nice"];
-let array_answer18 = ["You coming","You come","You to come","That you come"];
-let array_answer19 = ["People adult enough","Adult people enough","Enough adult persons","Enough adult people"];
-let array_answer20 = ["Is made","Is making","Is make","Makes"];
-let array_answer21 = ["Left I my glasses","I left my glasses","Did I leave my glasses","The glasses I left"];
-let array_answer22 = ["Four times","Twice a","Every others","Every couple"];
-let array_answer23 = ["Plugged it in","Plug in it","Plug it in","Will plug it in"];
-let array_answer24 = ["A very lot","Lots","A lot of","Very much"];
-let array_answer25 = ["Has he got","Has not he","Has he","Haven’t he"];
-let array_answer26 = ["Feel","Feel like","Like","Would like"];
-let array_answer27 = ["Won’t","Haven’t","Aren’t","Do not"];
-let array_answer28 = ["Which","What","Whose","Who"];
-let array_answer29 = ["No","Any","None","Some"];
-let array_answer30 = ["To talk","Talked","Talk","Talking"];
+let array_answer1 = ["a) He lives in London","b) He is live in London","c) He lives on London","d) He live in London"];
+let array_answer2 = ["a) dolles","b) dols","c) dolls","d) doles"];
+let array_answer3 = ["a) 7 past 15","b) 15 past 7","c) quarter past 15","d) half past 7"];
+let array_answer4 = ["a) didn't","b) wasn't","c) don't","d) haven't"];
+let array_answer5 = ["a) barrier race","b) jump-and-run race","c) hurdle race","d) obstacle race"];
+let array_answer6 = ["a) have","b) will have","c) should has","d) had"];
+let array_answer7 = ["a) has...woken up","b) was...woke up","c) had been...woken up","d) didn't...wake up"];
+let array_answer8 = ["a) innate","b) natural","c) ordinary","d) mediocrity"];
+let array_answer9 = ["a) step mother","b) motherland","c) mother-in-law","d) momma"];
+let array_answer10 = ["a) in","b) into","c) above","d) at"];
+let array_answer11 = ["a) dark horse","b) pain in the neck","c) piece of cake","d) cold foot"];
+let array_answer12 = ["a) hit","b) clenched","c) struck","d) tighten"];
+let array_answer13 = ["a) connect the dots","b) hit the sack","c) think outside the box","d) be in a pickle"];
+let array_answer14 = ["a) will be working","b) will work","c) will have been working","d) will have worked"];
+let array_answer15 = ["a) had broken up","b) had broke up","c) broke up","d) broken up"];
 
 let array_answers = [array_answer1,
     array_answer2,
@@ -98,53 +68,23 @@ let array_answers = [array_answer1,
     array_answer13,
     array_answer14,
     array_answer15,
-    array_answer16,
-    array_answer17,
-    array_answer18,
-    array_answer19,
-    array_answer20,
-    array_answer21,
-    array_answer22,
-    array_answer23,
-    array_answer24,
-    array_answer25,
-    array_answer26,
-    array_answer27,
-    array_answer28,
-    array_answer29,
-    array_answer30
 ];
 let array_correct_response = [
-    "Do",
-    "Works",
-    "He is a/an",
-    "Far",
-    "Will not be able",
-    "Have you been",
-    "Had",
-    "Ever",
-    "Forward to",
-    "Was",
-    "Silent",
-    "Knew",
-    "Might",
-    "Just",
-    "Up",
-    "Shall I",
-    "Nice",
-    "You to come",
-    "Enough adult people",
-    "Is made",
-    "I left my glasses",
-    "Every couple",
-    "Plug it in",
-    "A lot of",
-    "Has not he",
-    "Feel like",
-    "Do not",
-    "Which",
-    "Any",
-    "Talk"
+    "a) He lives in London",
+    "c) dolls",
+    "b) 15 past 7",
+    "a) didn't",
+    "d) obstacle race",
+    "b) will have",
+    "a) has...woken up",
+    "a) innate",
+    "c) mother-in-law",
+    "d) at",
+    "a) dark horse",
+    "b) clenched",
+    "c) think outside the box",
+    "c) will have been working",
+    "a) had broken up"
 ];
 
 let count_of_number_test = 1;
@@ -182,27 +122,27 @@ btn_next.addEventListener('click',function(){
         answer1_input.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
         answer1_input.style.opacity = "70%";
         answer1_input.style.color = "white";
-        window.correct_answer_count+=1;
+        window.correct_answer_count += 1;
     }
     if(answer2_input.checked && answer2_text.textContent === array_correct_response[y]) {
         console.log("Правильный ответ");
         answer2_input.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
         answer2_input.style.opacity = "70%";
         answer2_input.style.color = "white";
-        window.correct_answer_count+=1;
+        window.correct_answer_count += 1;
     }
     if(answer3_input.checked && answer3_text.textContent === array_correct_response[y]) {
         console.log("Правильный ответ");
         answer3_input.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
         answer3_input.style.opacity = "70%";
         answer3_input.style.color = "white";
-        window.correct_answer_count+=1;
+        window.correct_answer_count += 1;
     }
     if(answer4_input.checked && answer4_text.textContent === array_correct_response[y]) {
         console.log("Правильный ответ");
         answer4_input.style.background = "linear-gradient(45deg,rgb(14, 98, 87), #25DAC5)";
         answer4_input.style.opacity = "70%";
-        window.correct_answer_count+=1;
+        window.correct_answer_count += 1;
     }
     
         btn_next.style.pointerEvents = "auto";
@@ -235,7 +175,7 @@ btn_next.addEventListener('click',function(){
         x++;    
         y++;
         console.log(y);
-        if(count_of_number_test > 29) {
+        if(count_of_number_test > 14) {
             btn_next.innerHTML = "Завершить тестирование"
             btn_next.addEventListener("click", function() {
                 localStorage.setItem('count_current_answer', window.correct_answer_count);

@@ -11,16 +11,10 @@ function show_result() {
             correct_result.innerHTML = window.count_correct;
             p1.style.fontSize = "20px";
             p2.style.fontSize = "20px";
-            if (window.count_correct <= 5) {
-                engleesh_level.innerHTML = "A1";
-            } else if (6 <= window.count_correct && window.count_correct <= 9) {
-                engleesh_level.innerHTML = "A2";
-            } else if (10 <= window.count_correct && window.count_correct <= 15) {
-                engleesh_level.innerHTML = "B1";
-            } else if (16 <= window.count_correct && window.count_correct <= 20) {
-                engleesh_level.innerHTML = "C1";
-            } else if (21 <= window.count_correct && window.count_correct <= 30) {
-                engleesh_level.innerHTML = "C2";
+             if (window.count_correct >= 12) {
+                p2.innerHTML = "Тест пройден, вы большой молодец &#129321;";
+            } else{
+                p2.innerHTML = "Тест не пройден, не набрано необходимое количество баллов,  попробуйте снова(или продолжите обучение) &#129300;";
             }
         });
     });
